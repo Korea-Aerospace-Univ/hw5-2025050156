@@ -12,7 +12,7 @@ int main(void)
 	for(i=1; i*A<=N; i++)
 		for(j=1; j*B<=N; j++)
 			for(k=1; k*C<=N; k++)
-				if(N - i * A - j * B - k * C == 0 && !(B % 2) && (k < i || k < j)) {
+				if(N - i * A - j * B - k * C == 0 && !(j % 2) && (k < i || k < j)) {
 					printf("%d %d %d\n", i, j, k);
 					found = true;
 				}
